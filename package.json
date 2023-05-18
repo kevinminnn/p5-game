@@ -4,8 +4,8 @@
   "description": "Pong Game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "build": "esbuild script.js --bundle --outfile=dist/bundle.js --sourcemap"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kevinminnn/p5-game.git"
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kevinminnn/p5-game/issues"
   },
-  "homepage": "https://github.com/kevinminnn/p5-game#readme"
+  "homepage": "https://github.com/kevinminnn/p5-game#readme",
+  "devDependencies": {
+    "esbuild": "^0.17.19"
+  }
 }
